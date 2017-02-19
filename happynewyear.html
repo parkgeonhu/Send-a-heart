@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>편지 전달</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+</head>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $("#child").slideUp("slow", function () {});
+        }, 4000);
+        setTimeout(function(){
+            $("#thankyou").css("display","block");
+        },5000);
+    });
+    
+</script>
+
+<style>
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    body {
+        font-family: "Nanum Gothic", sans-serif;
+        text-align: center;
+    }
+    #content {
+        position: relative;
+        text-align: center;
+        top: 50%;
+        margin-top: -130px;
+    }
+    #happynewyear {
+        width: 172px;
+        height: 127px;
+    }
+    #thankyou {
+        display: none;
+        position: relative;
+        width: 250px;
+        height: 168px;
+        left: 50%;
+        margin-left: -125px;
+    }
+</style>
+
+
+
+<body>
+    <div id="content">
+        <div id="child">
+            <img src="happynewyear.png" id="happynewyear">
+            <div>
+                <br>
+                <br>2014년 마무리 잘하고.
+                <br>2015년에는 새로운 다짐으로 시작하길!
+            </div>
+        </div>
+        <div id="show">
+            <img src="thank_you.jpg" id="thankyou">
+        </div>
+    </div>
+
+</body>
+
+</html>
